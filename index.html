@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Forecast App</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container py-4">
+    <h1 class="text-center mb-4">Weather Forecast App</h1>
+
+    <!-- Search form -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-md-6">
+        <div class="input-group">
+          <input id="cityInput" type="text" class="form-control"
+                 placeholder="Enter city name">
+          <button id="searchBtn" class="btn btn-primary">Get Weather</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Error message -->
+    <p id="errorMsg" class="text-center text-danger"></p>
+
+    <!-- Current weather -->
+    <div id="currentWeather" class="card mb-4 d-none">
+      <div class="card-body d-flex flex-column flex-md-row align-items-center">
+        <div class="me-md-4 text-center">
+          <h3 id="cityName"></h3>
+          <p id="weatherDesc" class="mb-1"></p>
+          <h2 id="temp"></h2>
+        </div>
+        <div class="text-center me-md-4">
+          <img id="weatherIcon" alt="icon">
+        </div>
+        <div>
+          <p id="humidity"></p>
+          <p id="wind"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Forecast -->
+    <h3 class="mb-3">5 Day Forecast</h3>
+    <div id="forecast" class="row g-3">
+      <!-- JS will insert cards here -->
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+

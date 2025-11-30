@@ -1,0 +1,29 @@
+body {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  min-height: 100vh;
+}
+
+h1, h3 {
+  color: #1d3c72;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.card {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+#currentWeather {
+  background-color: #ffffff;
+}
+
+#forecast .card {
+  background-color: #ffffff;
+}
+
+#weatherIcon {
+  width: 80px;
+  height: 80px;
+}
+
+
+
